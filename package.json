@@ -1,0 +1,22 @@
+{
+  "name": "vuex-map-two-way",
+  "version": "0.0.1",
+  "description": "two way state properties binding for v-model and any other usage (set\\get methods generator)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yarsky-tgz/vuex-map-two-way.git"
+  },
+  "author": "Yaroslav Dobzhanskij <merlyn.tgz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yarsky-tgz/vuex-map-two-way/issues"
+  },
+  "homepage": "https://github.com/yarsky-tgz/vuex-map-two-way#readme",
+  "dependencies": {
+    "dot-prop": "^4.2.0"
+  }
+}
