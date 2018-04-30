@@ -2,14 +2,10 @@ import dot from 'dot-prop';
 
 export function mapStateTwoWay(targetPath, action, props) {
   let result = {};
-  let target = null;
   ((typeof props === 'string') ? [props] : props).forEach(function (prop) {
     result[prop] = {
       get() {
-        if (target === null) {
-          target = dot.get(this.$store.state, targetPath);
-        }
-        return target[prop];
+        return dot.get(this.$store.state, target)[prop];
       },
       set(value) {
         this.$store.dispatch(action, (typeof props === 'string') ? value : { [prop]: value });
