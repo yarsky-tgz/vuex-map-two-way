@@ -5,7 +5,7 @@ export function mapStateTwoWay(targetPath, action, props) {
   ((typeof props === 'string') ? [props] : props).forEach(function (prop) {
     result[prop] = {
       get() {
-        return dot.get(this.$store.state, target)[prop];
+        return dot.get(this.$store.state, targetPath)[prop];
       },
       set(value) {
         this.$store.dispatch(action, (typeof props === 'string') ? value : { [prop]: value });

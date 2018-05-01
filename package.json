@@ -1,6 +1,6 @@
 {
   "name": "vuex-map2way",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "two way state properties binding for v-model and any other usage (set\\get methods generator)",
   "main": "index.js",
   "scripts": {
